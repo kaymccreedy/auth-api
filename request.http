@@ -1,0 +1,20 @@
+### User Create
+POST http://localhost:3000/users.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTc5ODA3NjJ9.sDejH5gMCs6oCFOh4bKrVqGMTMR7AgEkzEnXz_942pI
+Content-Type: application/json
+
+{
+  "name": "Kay",
+  "email": "kay@example.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Session Create
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "kay@example.com",
+  "password": "password"
+}
